@@ -1,0 +1,60 @@
+---------------------Quản lý account
+1. Xem, sort, search list khách hàng
+2. Lock (stt:1)/unclock (stt:0) account
+3. Thêm account
+ - personid: bắt buộc, kg dc trùng (chỉ dc nhập chuỗi số)
+ - name: bắt buộc (chỉ dc nhập chuỗi chữ, ko quá 100 ký tự)
+ - e-mail: bắt buộc, kg dc trùng (phải là mail hợp lệ)
+ - address: ko bắt buộc
+ - phone: ko bắt buộc (chỉ dc nhập chuỗi số)
+==> sau khi thêm thành công sẽ có mail gửi tới mail khách hàng thông tin để đăng nhập
+(pass dc tạo là 1 chuỗi ngẫu nhiên --> khách hàng sau khi đăng nhập có thể đổi lại pass)
+4. Edit account
+* Những thông tin: personid, name chỉ dc chỉnh sửa khi tài khoản đang KHÔNG có ký kết HĐ nào hiện đang còn hiệu lực
+ - personid: bắt buộc, kg dc trùng (chỉ dc nhập chuỗi số)
+ - name: bắt buộc (chỉ dc nhập chuỗi chữ, ko quá 100 ký tự)
+ - e-mail: bắt buộc, kg dc trùng (phải là mail hợp lệ)
+ - address: ko bắt buộc
+ - phone: ko bắt buộc (chỉ dc nhập chuỗi số)
+==> sau khi chỉnh sửa thành công sẽ có mail thông báo gửi tới mail khách hàng
+
+--------------Contracts
+- Xem, sort, search list contract
+- Xem chi tiết conract
+
+--------------Quản lý vehicle
+1. Xem, sort, search list khách hàng
+2.Thêm vehicle
+- brand: bắt buộc chọn
+- model: bắt buộc, chuỗi kg quá 100 ký tự
+- version: bắt buộc, chuỗi kg quá 100 ký tự
+- year: bắt buộc, phải là năm hợp lệ (range: 1950 - 2050)
+- price: bắt buộc (chỉ dc nhập chuỗi số)
+* vehicle kg dc trùng đồng thời 4 field sau: brand, model, version, year
+2.Edit vehicle
+tương tự add
+
+-------------Quản lý vehicle
+1. Xem, sort, search list brand
+2. Thêm brand: tên brand kg dc trùng
+3. Edit lại tên brand
+
+-----------Edit profile
+tương tự edit của phần account
+
+-----------Chang pass
+- nhập pass hiện tại
+- nhập pass mới: 1 uppercase,1 lowercase,1 number and 1 special 6-10 characters 
+- xác nhận lại pass
+
+---------- policy
+- insert new: có bắt lỗi nhập liệu. có check xem có policy nào trùng thông tin không, 
+nếu ko có mới tạo mới được
+trong bảng policy: chỉ những policy mới tạo mới được edit thông tin. Còn những cái đã chuyển sang apply 
+thì ko được edit nữa
+
+chỉ change được list policy những policy chung status,
+
+
+
+

@@ -1,0 +1,157 @@
+<div class="overlay-popup" [ngClass]="statusPopup?'active':''">
+    <p-toast></p-toast>
+    <div class="popup-content-preview" *ngIf="accountCustomer" >
+        <img src="https://sudip-bhowmick.github.io/images/img/close.svg" alt="close" class="close" (click)=" closePopup()">
+        <div class="preview preview-header">
+            <div class="preview-header-logo"><img loading="lazy"
+                    src="../../../../../assets/img/logo/logo.png"
+                    alt="" /></div>
+            <div class="preview-header-address">
+                <h2>Truz Insurance Agency</h2>
+                <span>35/6 D5</span>
+                <br>
+                <span>Binh Thanh District, Ho Chi Minh City</span>
+                <br>
+                <span>+(84)–123456789</span>
+                <br>
+                <span>www.truzinsuranceagency.com</span>
+            </div>
+
+        </div>
+        <hr>
+        <div class="preview preview-header">
+            <div class="preview-header-logo">
+                <h3>Insurance Proposal Prepared Exclusively For</h3>
+                <span>{{accountCustomer.accountname}}</span>
+                <br>
+                <span>{{accountCustomer.accountadd}}
+                </span>
+                <br>
+                <span>{{accountCustomer.accountemail}}
+                </span>
+                <br>
+                
+            </div>
+
+            <div class="preview-header-address">
+                <h3>Prepared By</h3>
+                <span>William Horton</span>
+                <br>
+                <span>(214) 555-5556</span>
+                <br>
+                <span>abc@gmail.com</span>
+            
+            </div>
+
+        </div>
+
+        <span>Thank you for the opportunity to assist you in assessing your personal insurance needs. I am pleased to
+            present to
+            you
+            the following personal insurance proposal:</span>
+        <br>
+        <hr>
+
+        <div class="preview preview-policy">
+            <div class="preview-policy-vehicle">
+                <h2>Personal Auto Policy</h2>
+                <h3>VEHICLES</h3>
+                <h4>{{nameCar}}</h4>
+                <div class="preview-policy-price">
+
+                    <div class="preview-policy-price-detail">
+                        <h5 style="text-transform:uppercase">{{carNumber}}</h5>
+                        <span>Car Number Plate</span>
+                    </div>
+                    <div class="preview-policy-price-detail">
+                        <h5 style="text-transform:uppercase">{{bodyNumber}}</h5>
+                        <span>Body Car Number</span>
+                    </div>
+
+                    <div class="preview-policy-price-detail">
+                    </div>
+
+                    
+                    <div class="preview-policy-price-detail">
+                        <h5>{{duration}} Year</h5>
+                        <span>Duration</span>
+                    </div>
+                    <div class="preview-policy-price-detail">
+                        <h5>{{dateExpire1}}</h5>
+                        <span>Expiration Date</span>
+                    </div>
+                    <div class="preview-policy-price-detail">  
+                    </div>
+
+                    <div class="preview-policy-price-detail">
+                        <h5 *ngIf="insuranceFeeValue>0">${{insuranceFeeValue.toFixed(2)}}</h5>
+                        <span>Insurance fee</span>
+                    </div>
+                    
+                    <div class="preview-policy-price-detail">
+                        <h5 estimateValue>${{estimateValue.toFixed(2)}}</h5>
+                        <span>Value Estimate</span>
+                    </div>
+
+                    <div class="preview-policy-price-detail">
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="col-12">
+                <p-divider align="left">
+                    <h4>MAXIMUM COMPENSATION VALUE</h4>
+                </p-divider>
+                <span *ngIf="theft != 0" style="font-size: 20px;">Vehicle theft: <strong>${{theft.toFixed(2)}}</strong></span>
+                <br>
+                <span *ngIf="accident != 0" style="font-size: 20px;">Vehicle accident: <strong>${{accident.toFixed(2)}}</strong></span>
+                <br>
+                <span  *ngIf="body != 0" style="font-size: 20px;">Vehicle body: <strong>${{body.toFixed(2)}}</strong></span>
+                <br>
+                <span  *ngIf="engine != 0" style="font-size: 20px;">Vehicle engine: <strong>${{engine.toFixed(2)}}</strong></span>
+                <br>
+                <span *ngIf="flood != 0" style="font-size: 20px;">Vehicle flood: <strong>${{flood.toFixed(2)}}</strong></span>
+            </div> 
+            <p-divider></p-divider>
+            
+            <div class="preview-policy-driver">
+                <h3>Client</h3>
+                <h4><span>{{accountCustomer.accountname}}</span>
+                </h4>
+            </div>
+        </div>
+
+
+        <div class="preview preview-summary">
+            <div class="preview-summary-detail">
+                <div class="preview-summary-detail-title">
+                    <h3>Total Cost</h3>
+                </div>
+                <div class="preview-summary-detail-number" style="font-size: 20px;">${{(insuranceFeeValue).toFixed(2)}}
+                </div>
+            </div>
+
+        </div>
+        <h5 style="margin:5% 0;">Disclosure: The premium estimates and coverage limits outlined in the proposal above
+            are based upon the accuracy of
+            the
+            information you provided and may not represent all coverages available. This
+            proposal does not constitute a contract or binder of insurance and premium amounts cannot be guaranteed
+            until
+            coverage
+            is purchased. For additional information regarding the assumptions used to
+            prepare this proposal or to purchase insurance coverage, please contact your agent at the phone number
+            listed above.
+        </h5>
+        <p><input id="terms" type="checkbox"  name="terms" value="on" #agree1/> I agree</p>
+        <p><input id="terms" type="checkbox"  name="terms" value="on" #agree2 /> I have read and acept the <a
+                href="#">Privacy Statements</a></p>
+        <div class="container-button"><input type="button" id="continue_btn" value="Back" (click)="closePopup()">
+            <input type="button" id="continue_btn" value="Next" (click)="goNextTab()">
+        </div>
+    </div>
+
+
+    <!-- (click)="nextPrev(1)" -->
+</div>

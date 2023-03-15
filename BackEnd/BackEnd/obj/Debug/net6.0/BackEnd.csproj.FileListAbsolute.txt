@@ -1,0 +1,483 @@
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\appsettings.json
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.staticwebassets.runtime.json
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.exe
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.deps.json
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.runtimeconfig.json
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\ref\BackEnd.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.pdb
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Castle.Core.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Humanizer.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.csproj.AssemblyReference.cache
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.AssemblyInfoInputs.cache
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.AssemblyInfo.cs
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.csproj.CoreCompileInputs.cache
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\scopedcss\bundle\BackEnd.styles.css
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.csproj.CopyComplete
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\ref\BackEnd.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.pdb
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.genruntimeconfig.cache
+D:\Car_Insurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.GeneratedMSBuildEditorConfig.editorconfig
+D:\Car_Insurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.AssemblyInfoInputs.cache
+D:\Car_Insurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.AssemblyInfo.cs
+D:\Car_Insurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.csproj.CoreCompileInputs.cache
+D:\Car_Insurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.MvcApplicationPartsAssemblyInfo.cache
+D:\Car_Insurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.dll
+D:\Car_Insurance\BackEnd\BackEnd\obj\Debug\net6.0\ref\BackEnd.dll
+D:\Car_Insurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.pdb
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\appsettings.Development.json
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\appsettings.json
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.staticwebassets.runtime.json
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.exe
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.deps.json
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.runtimeconfig.json
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\ref\BackEnd.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.pdb
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Castle.Core.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Humanizer.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Car_Insurance\BackEnd\BackEnd\obj\Debug\net6.0\staticwebassets.build.json
+D:\Car_Insurance\BackEnd\BackEnd\obj\Debug\net6.0\staticwebassets.development.json
+D:\Car_Insurance\BackEnd\BackEnd\obj\Debug\net6.0\scopedcss\bundle\BackEnd.styles.css
+D:\Car_Insurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.csproj.CopyComplete
+D:\Car_Insurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.genruntimeconfig.cache
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\BCrypt.Net.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Azure.Core.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Graph.Core.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Memory.Data.dll
+D:\Car_Insurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\appsettings.json
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.staticwebassets.runtime.json
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.exe
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.deps.json
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.runtimeconfig.json
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\ref\BackEnd.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.pdb
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BCrypt.Net.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Castle.Core.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Humanizer.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Graph.Core.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.csproj.AssemblyReference.cache
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.AssemblyInfoInputs.cache
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.AssemblyInfo.cs
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.csproj.CoreCompileInputs.cache
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\scopedcss\bundle\BackEnd.styles.css
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.csproj.CopyComplete
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\ref\BackEnd.dll
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.pdb
+C:\Users\xuan\Desktop\lamthem\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.genruntimeconfig.cache
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BCrypt.Net.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Graph.Core.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\xuan\source\repos\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Text.Json.dll
+D:\Car_Insurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.csproj.AssemblyReference.cache
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\appsettings.Development.json
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\appsettings.json
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.staticwebassets.runtime.json
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.exe
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.deps.json
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.runtimeconfig.json
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.pdb
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Azure.Core.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BCrypt.Net.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Castle.Core.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Humanizer.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Graph.Core.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Memory.Data.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Text.Json.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.csproj.AssemblyReference.cache
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.GeneratedMSBuildEditorConfig.editorconfig
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.AssemblyInfoInputs.cache
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.AssemblyInfo.cs
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.csproj.CoreCompileInputs.cache
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.MvcApplicationPartsAssemblyInfo.cache
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\staticwebassets.build.json
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\staticwebassets.development.json
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\scopedcss\bundle\BackEnd.styles.css
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.csproj.CopyComplete
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\refint\BackEnd.dll
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.pdb
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.genruntimeconfig.cache
+D:\Laptop Folders\Desktop\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\ref\BackEnd.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\appsettings.json
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.staticwebassets.runtime.json
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.exe
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.deps.json
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.runtimeconfig.json
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\ref\BackEnd.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.pdb
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BCrypt.Net.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Castle.Core.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Humanizer.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Graph.Core.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.csproj.AssemblyReference.cache
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.AssemblyInfoInputs.cache
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.AssemblyInfo.cs
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.csproj.CoreCompileInputs.cache
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\scopedcss\bundle\BackEnd.styles.css
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.csproj.CopyComplete
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\ref\BackEnd.dll
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.pdb
+C:\Users\xuan\Desktop\xuan13jul\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.genruntimeconfig.cache
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\appsettings.json
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.staticwebassets.runtime.json
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.exe
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.deps.json
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.runtimeconfig.json
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.pdb
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BCrypt.Net.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Castle.Core.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Humanizer.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Graph.Core.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.csproj.AssemblyReference.cache
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.AssemblyInfoInputs.cache
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.AssemblyInfo.cs
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.csproj.CoreCompileInputs.cache
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\scopedcss\bundle\BackEnd.styles.css
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.csproj.CopyComplete
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\refint\BackEnd.dll
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.pdb
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.genruntimeconfig.cache
+C:\Users\WALTER TAN\Desktop\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\ref\BackEnd.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\appsettings.Development.json
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\appsettings.json
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.staticwebassets.runtime.json
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.exe
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.deps.json
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.runtimeconfig.json
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BackEnd.pdb
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Azure.Core.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\BCrypt.Net.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Castle.Core.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Humanizer.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Graph.Core.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Memory.Data.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Text.Json.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.csproj.AssemblyReference.cache
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.GeneratedMSBuildEditorConfig.editorconfig
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.AssemblyInfoInputs.cache
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.AssemblyInfo.cs
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.csproj.CoreCompileInputs.cache
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.MvcApplicationPartsAssemblyInfo.cache
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\staticwebassets.build.json
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\staticwebassets.development.json
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\scopedcss\bundle\BackEnd.styles.css
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.csproj.CopyComplete
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\refint\BackEnd.dll
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.pdb
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.genruntimeconfig.cache
+D:\Laptop Folders\Desktop\New folder\New folder\CarInsurance\BackEnd\BackEnd\obj\Debug\net6.0\ref\BackEnd.dll

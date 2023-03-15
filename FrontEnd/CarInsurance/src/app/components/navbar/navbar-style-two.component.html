@@ -1,0 +1,114 @@
+<div class="navbar-area">
+    <div class="mobile-nav">
+        <a routerLink="/home" class="logo"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+    </div>
+    
+    <div class="nav-two main-nav">
+        <div class="container-fluid">
+            <nav class="container-max navbar navbar-expand-md navbar-light ">
+                <a class="navbar-brand" routerLink="/home"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+
+                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto" *ngIf="checkRole== null">
+                        <li class="nav-item">
+                            <a routerLink="/home" class="nav-link">Home </a>
+                        </li>
+
+                        <li class="nav-item"><a routerLink="/about" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">About</a></li>
+                        <li class="nav-item"><a routerLink="/policy" class="nav-link">policy elements</a></li>
+                        <li class="nav-item"><a routerLink="/contact" class="nav-link">Contact</a></li>
+                        <li   class="nav-item" ><a routerLink="/login-register" class="nav-link">Login or Register</a></li>
+                    </ul>
+
+                    <ul class="navbar-nav m-auto" *ngIf="checkRole== 'customer'">
+                        <li class="nav-item">
+                            <a routerLink="/home" class="nav-link">Home </a>
+                        </li>
+
+                        <li class="nav-item"><a routerLink="/about" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">About</a></li>
+                        <li class="nav-item"><a routerLink="/buy" class="nav-link">Buy Insurance</a></li>
+                        <li class="nav-item"><a routerLink="/policy" class="nav-link">policy elements</a></li>
+                        <li class="nav-item"><a routerLink="/contact" class="nav-link">Contact</a></li>
+                       
+                        <li   class="nav-item" ><a routerLink="/profile" class="nav-link">My Account</a></li>
+                        <li   class="nav-item" ><a routerLink="/logout" class="nav-link">Logout</a></li>
+                    </ul>
+                    <ul class="navbar-nav m-auto" *ngIf="checkRole== 'admin'">
+                        <li class="nav-item">
+                            <a routerLink="/home" class="nav-link">Home </a>
+                        </li>
+
+                        <li class="nav-item"><a routerLink="/about" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">About</a></li>
+                        <li class="nav-item"><a routerLink="/policy" class="nav-link">policy elements</a></li>
+                        <li class="nav-item"><a routerLink="/contact" class="nav-link">Contact</a></li>
+                       
+                        <li   class="nav-item" ><a routerLink="/admin" class="nav-link">Admin Dashboard</a></li>
+                        <li   class="nav-item" ><a routerLink="/logout" class="nav-link">Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="side-nav-responsive">
+        <div class="container">
+            <div class="dot-menu">
+                <div class="circle-inner">
+                    <div class="circle circle-one"></div>
+                    <div class="circle circle-two"></div>
+                    <div class="circle circle-three"></div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="side-nav-inner">
+                    <div class="side-nav justify-content-center  align-items-center">
+                        <div class="side-item">
+                            <div class="cart-btn">
+                                <a routerLink="/cart"><i class="flaticon-shopping-bags"></i> <span>0</span></a>
+                            </div>
+                        </div>
+
+                        <div class="side-item">
+                            <div class="search-box">
+                                <i class="flaticon-loupe"></i>
+                            </div>
+                        </div>
+
+                        <div class="side-item">
+                            <div class="user-btn">
+                                <a routerLink="/"><i class="flaticon-contact"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="side-item">
+                            <div class="nav-add-btn">
+                                <a routerLink="/" class="default-btn border-radius">Add Listing <i class='bx bx-plus'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="search-overlay">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="search-layer"></div>
+            <div class="search-layer"></div>
+            <div class="search-layer"></div>
+            <div class="search-close">
+                <span class="search-close-line"></span>
+                <span class="search-close-line"></span>
+            </div>
+            <div class="search-form">
+                <form>
+                    <input type="text" class="input-search" placeholder="Search here...">
+                    <button type="submit"><i class="flaticon-loupe"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

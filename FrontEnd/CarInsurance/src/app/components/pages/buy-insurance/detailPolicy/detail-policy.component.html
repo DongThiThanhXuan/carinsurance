@@ -1,0 +1,49 @@
+<div class="overlay-popup" [ngClass]="statusPopup?'active':''">
+    <div class="row col-lg-12 popup-content">
+       
+        <div class="row col-lg-12">
+            <h1>Offer Policy for {{carName}} </h1>
+            <br>
+            <ng-container *ngIf="policyOffer!=null">
+                <div class="row col-lg-12 ">
+                    Vehicle's Warranty:&nbsp;{{policyOffer.vehiclewarranty?"Yes":"No"}}
+                </div>
+                <div class="row col-lg-12 ">
+                    Vehicle's Theft:&nbsp;{{policyOffer.vehicletheft}} %
+                </div>
+                <div class="row col-lg-12 ">
+                    Vehicle's Accident:&nbsp;{{policyOffer.vehicleaccident}}%
+                </div>
+                <div class="row col-lg-12 ">
+                    Vehicle's Body:&nbsp;{{policyOffer.vehiclebody}}%
+                </div>
+                <div class="row col-lg-12 ">
+                    Vehicle's Engine:&nbsp;{{policyOffer.vehicleengine}}%
+                </div>
+                <div class="row col-lg-12 ">
+                    Flood:&nbsp;{{policyOffer.flood}}%
+                </div>
+                <div class="row col-lg-12 ">
+    
+                </div>
+                <div class="row col-lg-12 ">
+                    Percentage Insurance:&nbsp;{{policyOffer.insurancepercent}} %
+                </div>
+            </ng-container>
+        </div>
+        <div class="row col-lg-12 ">
+          <p style="color:#dc3545 ;">Please take note: These percentages are based on the actual value of your vehicle</p>
+        </div>
+        <div class="row col-lg-12 ">
+            <div class="col-lg-4 "><input type="button" id="continue_btn" value="Cancel" (click)="closePopup()" style="width: 100%;height: 100%;"></div>                  
+            <div class="col-lg-4 "></div>
+            <div class="col-lg-4 "><input type="button" id="continue_btn" value="Choose" (click)="goNextTab()" style="width: 100%;height: 100%;"></div> 
+        </div>
+</div>
+
+
+<!-- (click)="nextPrev(1)" -->
+</div>
+
+
+

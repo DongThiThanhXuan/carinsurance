@@ -1,0 +1,605 @@
+<div class="content-header">
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1 class="m-0">Account</h1>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </div><!-- /.container-fluid -->
+</div>
+
+<div class="card">
+  <p-table #dt [value]="listaccount" [paginator]="true" [rows]="rows" [showCurrentPageReport]="true" [(first)]="first" 
+  responsiveLayout="scroll" [rowHover]="true" dataKey="policyid" styleClass="p-datatable-listaccount"  [(selection)]="selectedPolicys"
+      currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [rowsPerPageOptions]="[10,25,50]"
+      [filterDelay]="0" [globalFilterFields]="['policyid','brandname','vehiclemodel','vehicleversion','vehicletheft','vehicleaccident','vehiclebody','vehicleengine','flood','insurancepercent','vehiclewarranty']">
+      <ng-template pTemplate="caption">
+        <div class="table-header">
+          <div class="row" style="margin: 0px;">
+            <div class="col-md-9">
+              <button pButton pRipple label="New Policy" icon="pi pi-plus" class="p-button-success mr-2"
+          (click)="openAddPolicy()"></button>
+          <button pButton pRipple label="Change Status" icon="pi pi-sync" class="p-button-secondary" (click)="changestatus()" ></button>
+            </div>
+            <div class="col-md-3">
+              <span class="p-input-icon-right" style="float: right;">
+                <input pInputText type="text" (input)="dt.filterGlobal($event.target.value, 'contains')" placeholder="Global Search"  > <i class="pi pi-search"></i>               
+            </span>
+            </div>
+          </div>
+          
+        </div>
+    </ng-template>
+      <ng-template pTemplate="header">
+          <tr>
+            <th style="width: 3rem">
+             
+          </th>
+            <th pSortableColumn="policyid">
+              <div class="flex justify-content-between align-items-center">
+                Policyid
+                <p-sortIcon field="policyid"></p-sortIcon>
+              </div>
+            </th>
+            <th pSortableColumn="vehicleversion">
+              <div class="flex justify-content-between align-items-center">
+                Vehicle version
+                <p-sortIcon field="vehicleversion"></p-sortIcon>
+              </div>
+            </th>
+            <th pSortableColumn="vehiclewarranty">
+              <div class="flex justify-content-between align-items-center">
+                Still Under Warranty
+                <p-sortIcon field="vehiclewarranty"></p-sortIcon>
+              </div>
+            </th>
+            <th pSortableColumn="vehicletheft">
+              <div class="flex justify-content-between align-items-center">
+                Theft
+                <p-sortIcon field="vehicletheft"></p-sortIcon>
+              </div>
+            </th>
+            <th pSortableColumn="vehicleaccident">
+              <div class="flex justify-content-between align-items-center">
+                Accident
+                <p-sortIcon field="vehicleaccident"></p-sortIcon>
+              </div>
+            </th>
+            <th pSortableColumn="vehiclebody">
+              <div class="flex justify-content-between align-items-center">
+                Body
+                <p-sortIcon field="vehiclebody"></p-sortIcon>
+              </div>
+            </th>
+            <th pSortableColumn="vehicleengine">
+              <div class="flex justify-content-between align-items-center">
+                Engine
+                <p-sortIcon field="vehicleengine"></p-sortIcon>
+              </div>
+            </th>
+            <th pSortableColumn="flood">
+              <div class="flex justify-content-between align-items-center">
+                Flood
+                <p-sortIcon field="flood"></p-sortIcon>
+              </div>
+            </th>
+            <th pSortableColumn="insurancepercent">
+              <div class="flex justify-content-between align-items-center">
+                Fee
+                <p-sortIcon field="insurancepercent"></p-sortIcon>
+              </div>
+            </th>
+            <th pSortableColumn="policystatus">
+              <div class="flex justify-content-between align-items-center">
+                Status
+                <p-sortIcon field="policystatus"></p-sortIcon>
+              </div>
+            </th>
+            <th><div class="flex justify-content-between align-items-center">
+            </div></th>
+          </tr>
+      </ng-template>
+      
+      <ng-template pTemplate="body" let-policy>
+          <tr class="p-selectable-row">
+            <td *ngIf="policy.policystatus!=0">
+              <p-tableCheckbox [value]="policy"></p-tableCheckbox>
+            </td>
+            <td *ngIf="policy.policystatus==0">
+              
+            </td>
+            <td>Plc{{policy.policyid}}</td>
+            <td>{{policy.brandname}}-{{policy.vehiclemodel}}-{{policy.vehicleversion}}</td>
+            <td>{{policy.vehiclewarranty==1?"Yes":"No"}}</td>
+            <td>{{policy.vehicletheft}}%</td>
+            <td>{{policy.vehicleaccident}}%</td>
+            <td>{{policy.vehiclebody}}%</td>
+            <td>{{policy.vehicleengine}}%</td>
+            <td>{{policy.flood}}%</td>
+            <td>{{policy.insurancepercent}}%</td>
+            <td *ngIf="policy.policystatus==0"> <span style="color: #8a5340;background-color: #FEEDAF;">New Created</span></td>
+            <td *ngIf="policy.policystatus==1" ><span style="color: #256029;background-color: #C8E6C9;">Apply</span></td>
+            <td *ngIf="policy.policystatus==2" ><span style="color: #801136;background-color: #FFCDD2;">UnApply</span></td>
+
+            <td *ngIf="policy.policystatus==0"><button pButton pRipple type="button" icon="pi pi-cloud-upload" class="p-button-rounded p-button-info p-button-text" (click)="showEdit(policy)"></button></td>
+            <td *ngIf="policy.policystatus!=0">
+              
+            </td> 
+          </tr>
+      </ng-template>
+  </p-table>
+
+  <form (ngSubmit)="save()">
+    <p-dialog [(visible)]="policyDialog" [style]="{width: '500px'}" header="Add Policy"
+        [modal]="true" [draggable]="false" [resizable]="false" styleClass="p-fluid">
+        <ng-template pTemplate="content">
+                <div class="row"  *ngIf="vehicle ==null">
+                  <div class="form-group">
+                    <button pButton pRipple label="Choose Vehicle" icon="pi pi-plus" class="p-button-success mr-2"
+                  (click)="showlistVehicle()"></button>
+                  </div>                         
+                </div>
+          
+                <div class="row" *ngIf="vehicle !=null">
+                  <div class="form-group">
+                    <label for="brandname">Vehicle Info: {{vehicle.brand +' '+ vehicle.vehiclemodel+' '+vehicle.vehicleversion+' '+vehicle.yearofmanufacture}}</label>  
+                    <button pButton pRipple type="button" icon="pi pi-pencil" class="p-button-rounded p-button-info p-button-text" (click)="showlistVehicle()"></button>    
+                  </div>                         
+                </div>
+                <div class="row" >
+                  <div class="form-group">
+                    <label for="brandname">Vehicle Warranty</label>  
+                    <div class="row">
+                      <p-dropdown [options]="listWarranty" [(ngModel)]="warranty" optionLabel="content" placeholder="Select warranty status" [ngModelOptions]="{standalone: true}"></p-dropdown>
+                    </div>
+                  </div>                         
+                </div>
+                <div class="row" >
+                  <div class="form-group">
+                    <label for="brandname">Vehicle Theft: (%)</label>  
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <ng-container >
+                          <input type="text" class="form-control" id="VehicleTheft" 
+                          pInputText style="width: 100%;" [(ngModel)]="editvehicletheft" [ngModelOptions]="{standalone: true}">
+                        </ng-container>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <small id="phone-help" class="p-error" style="width: 100%;">{{errorVehicleTheft}}</small>  
+                        </div>
+                      </div>
+                    </div>
+                  </div>                         
+                </div>
+                <div class="row" >
+                  <div class="form-group">
+                    <label for="brandname">Vehicle Accident: (%)</label>  
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <ng-container >
+                          <input type="text" class="form-control" id="vehicleaccident" 
+                        pInputText style="width: 100%;" [(ngModel)]="editvehicleaccident" [ngModelOptions]="{standalone: true}">
+                        </ng-container>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <small id="phone-help" class="p-error" style="width: 100%;">{{errorVehicleaccident}}</small>  
+                        </div>
+                      </div>
+                    </div>
+                  </div>                         
+                </div>
+                <div class="row" >
+                  <div class="form-group">
+                    <label for="brandname">Vehicle Body: (%)</label>  
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <ng-container >
+                          <input type="text" class="form-control" id="vehicleaccident" 
+                          pInputText style="width: 100%;" [(ngModel)]="editvehiclebody" [ngModelOptions]="{standalone: true}">
+                        </ng-container>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <small id="phone-help" class="p-error" style="width: 100%;">{{errorVehiclebody}}</small>  
+                        </div>
+                      </div>
+                    </div>
+                  </div>                         
+                </div>
+                <div class="row" >
+                  <div class="form-group">
+                    <label for="brandname">Vehicle Engine: (%)</label>  
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <ng-container >
+                          <input type="text" class="form-control" id="vehicleaccident" 
+                         pInputText style="width: 100%;" [(ngModel)]="editvehicleengine" [ngModelOptions]="{standalone: true}">
+                        </ng-container>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <small id="phone-help" class="p-error" style="width: 100%;">{{errorVehicleengine}}</small>  
+                        </div>
+                      </div>
+                    </div>
+                  </div>                         
+                </div>
+                <div class="row" >
+                  <div class="form-group">
+                    <label for="brandname">Flood: (%)</label>  
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <ng-container >
+                          <input type="text" class="form-control" id="vehicleaccident" 
+                          pInputText style="width: 100%;" [(ngModel)]="editflood" [ngModelOptions]="{standalone: true}">
+                        </ng-container>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <small id="phone-help" class="p-error" style="width: 100%;">{{errorFlood}}</small>  
+                        </div>
+                      </div>
+                    </div>
+                  </div>                         
+                </div>
+                <div class="row" >
+                  <div class="form-group">
+                    <label for="brandname">Insurance Percent: (%)</label>  
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <ng-container >
+                          <input type="text" class="form-control" id="vehicleaccident" 
+                          pInputText style="width: 100%;" [(ngModel)]="editinsurancepercent" [ngModelOptions]="{standalone: true}">
+                        </ng-container>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <small id="phone-help" class="p-error" style="width: 100%;">{{errorInsurancepercent}}</small>  
+                        </div>
+                      </div>
+                    </div>
+                  </div>                         
+                </div>
+
+    
+        </ng-template>
+        <ng-template pTemplate="footer">
+            <button pButton pRipple label="Cancel" icon="pi pi-times" class="p-button-text" type="button"
+                (click)="policyDialog=false"></button>
+            <button pButton pRipple type="submit" label="Save" icon="pi pi-check" class="p-button-text"></button>
+        </ng-template>
+    </p-dialog>
+  </form>
+  <p-dialog header="" [(visible)]="loadingDialog" [modal]="true" [style]="{width: '5vw'}" [style]="{height: '5vw'}"
+      [draggable]="false" [resizable]="false" [closable]="false">
+      <ng-template pTemplate="footer">
+          <div class="row">
+              <div class=" col-12">
+                  <div class="row">
+                      <div class="col-4"></div>
+                      <div class="col-4"><img src="../../assets/img/Spin-1s-200px.gif"
+                              style="text-align: center;" /></div>
+                      <div class="col-4"></div>
+                  </div>
+
+              </div>
+
+          </div>
+          <br><br>
+      </ng-template>
+  </p-dialog>
+
+  <p-dialog [(visible)]="dialogInfo" [style]="{width: '300px'}" header="Information"
+  [modal]="true" [draggable]="false" [resizable]="false" styleClass="p-fluid">
+  {{dialogInfo}}
+  </p-dialog>
+
+  <p-confirmDialog [style]="{width: '50vw'}" [baseZIndex]="10000" rejectButtonStyleClass="p-button-text"></p-confirmDialog>
+</div>
+
+<form *ngIf="showpolicy !=null" (ngSubmit)="Edit()">
+  <p-dialog [(visible)]="showInfoPolicy" [style]="{width: '700px', height:'900px'}" header="Edit Policy"
+      [modal]="true" [draggable]="false" [resizable]="false" styleClass="p-fluid">
+      <ng-template pTemplate="content">
+          <div class="row">
+                <div class="form-group">
+                  <label for="policyid" >Policyid: Plc{{showpolicy.policyid}}  </label>               
+                </div>             
+          </div>
+        
+          <div class="row" *ngIf="vehicle !=null">
+            <div class="form-group">
+              <label for="brandname">Vehicle Name: {{vehicle.brand +' '+ vehicle.vehiclemodel+' '+vehicle.vehicleversion+' '+vehicle.yearofmanufacture}}</label>  
+              <button pButton pRipple type="button" icon="pi pi-pencil" class="p-button-rounded p-button-info p-button-text" (click)="showlistVehicle()"></button>    
+            </div>                         
+          </div>
+          <div class="row" >
+            <div class="form-group">
+              <label for="brandname">Vehicle Warranty</label>  
+              <div class="row">
+                <p-dropdown [options]="listWarranty" [(ngModel)]="warranty" optionLabel="content" [ngModelOptions]="{standalone: true}"></p-dropdown>
+              </div>
+            </div>                         
+          </div>
+          <div class="row" >
+            <div class="form-group">
+              <label for="brandname">Vehicle Theft: (%)</label>  
+              <div class="row">
+                <div class="col-lg-12">
+                  <ng-container >
+                    <input type="text" class="form-control" id="VehicleTheft" 
+                    value="{{editvehicletheft}}" pInputText style="width: 100%;" [(ngModel)]="editvehicletheft" [ngModelOptions]="{standalone: true}">
+                  </ng-container>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <small id="phone-help" class="p-error" style="width: 100%;">{{errorVehicleTheft}}</small>  
+                  </div>
+                </div>
+              </div>
+            </div>                         
+          </div>
+          <div class="row" >
+            <div class="form-group">
+              <label for="brandname">Vehicle Accident: (%)</label>  
+              <div class="row">
+                <div class="col-lg-12">
+                  <ng-container >
+                    <input type="text" class="form-control" id="vehicleaccident" 
+                    value="{{editvehicleaccident}}" pInputText style="width: 100%;" [(ngModel)]="editvehicleaccident" [ngModelOptions]="{standalone: true}">
+                  </ng-container>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <small id="phone-help" class="p-error" style="width: 100%;">{{errorVehicleaccident}}</small>  
+                  </div>
+                </div>
+              </div>
+            </div>                         
+          </div>
+          <div class="row" >
+            <div class="form-group">
+              <label for="brandname">Vehicle Body: (%)</label>  
+              <div class="row">
+                <div class="col-lg-12">
+                  <ng-container >
+                    <input type="text" class="form-control" id="vehicleaccident" 
+                    value="{{editvehiclebody}}" pInputText style="width: 100%;" [(ngModel)]="editvehiclebody" [ngModelOptions]="{standalone: true}">
+                  </ng-container>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <small id="phone-help" class="p-error" style="width: 100%;">{{errorVehiclebody}}</small>  
+                  </div>
+                </div>
+              </div>
+            </div>                         
+          </div>
+          <div class="row" >
+            <div class="form-group">
+              <label for="brandname">Vehicle Engine: (%)</label>  
+              <div class="row">
+                <div class="col-lg-12">
+                  <ng-container >
+                    <input type="text" class="form-control" id="vehicleaccident" 
+                    value="{{editvehicleengine}}" pInputText style="width: 100%;" [(ngModel)]="editvehicleengine" [ngModelOptions]="{standalone: true}">
+                  </ng-container>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <small id="phone-help" class="p-error" style="width: 100%;">{{errorVehicleengine}}</small>  
+                  </div>
+                </div>
+              </div>
+            </div>                         
+          </div>
+          <div class="row" >
+            <div class="form-group">
+              <label for="brandname">Flood: (%)</label>  
+              <div class="row">
+                <div class="col-lg-12">
+                  <ng-container >
+                    <input type="text" class="form-control" id="vehicleaccident" 
+                    value="{{editflood}}" pInputText style="width: 100%;" [(ngModel)]="editflood" [ngModelOptions]="{standalone: true}">
+                  </ng-container>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <small id="phone-help" class="p-error" style="width: 100%;">{{errorFlood}}</small>  
+                  </div>
+                </div>
+              </div>
+            </div>                         
+          </div>
+          <div class="row" >
+            <div class="form-group">
+              <label for="brandname">Insurance Percent: (%)</label>  
+              <div class="row">
+                <div class="col-lg-12">
+                  <ng-container >
+                    <input type="text" class="form-control" id="vehicleaccident" 
+                    value="{{editinsurancepercent}}" pInputText style="width: 100%;" [(ngModel)]="editinsurancepercent" [ngModelOptions]="{standalone: true}">
+                  </ng-container>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <small id="phone-help" class="p-error" style="width: 100%;">{{errorInsurancepercent}}</small>  
+                  </div>
+                </div>
+              </div>
+            </div>                         
+          </div>
+          <div class="row" >
+            <div class="form-group">
+              <label for="brandname">Status</label>  
+              <div class="row">
+                <div class="col-lg-3 field-radiobutton">
+                  <p-radioButton name="status" value="0" [(ngModel)]="editpolicystatus" inputId="stt1" ></p-radioButton>
+                  <label for="stt1" style="margin-bottom: 0px;margin-left: 5px;">New Created</label>
+                </div>
+                <div class="col-lg-3 field-radiobutton">
+                  <p-radioButton name="status" value="1" [(ngModel)]="editpolicystatus" inputId="stt2"></p-radioButton>
+                  <label for="stt2" style="margin-bottom: 0px;margin-left: 5px;">Apply</label>
+                </div>
+              <div class="col-lg-3 field-radiobutton">
+                  <p-radioButton name="status" value="2" [(ngModel)]="editpolicystatus" inputId="stt3"></p-radioButton>
+                  <label for="stt3" style="margin-bottom: 0px;margin-left: 5px;">UnApply</label>
+              </div>
+              </div>
+            </div>                         
+          </div>
+      </ng-template>
+      <ng-template pTemplate="footer">
+          <button pButton pRipple label="Cancel" icon="pi pi-times" class="p-button-text" type="button"
+              (click)="showInfoPolicy=false"></button>
+          <button pButton pRipple type="submit" label="Save" icon="pi pi-check" class="p-button-text" ></button>
+      </ng-template>
+  </p-dialog>
+</form>
+
+
+<p-dialog [(visible)]="showListVehicle" [style]="{width: '1000px', height:'1000px'}" header="Choose Vehicle From List"
+[modal]="true" [draggable]="false" [resizable]="false" styleClass="p-fluid">
+<ng-template pTemplate="content">
+  <p-table #abc [value]="allvehicle" selectionMode="single" [(selection)]="vehicle" dataKey="vehicleid" responsiveLayout="scroll"
+
+  [globalFilterFields]="['vehicleid','brandid','brand','vehiclemodel','vehicleversion','yearofmanufacture']">
+      <ng-template pTemplate="caption">
+        <div class="table-header">
+          <div class="row" style="margin: 0px;">
+            <div class="col-md-9" >
+               
+            </div>
+            <div class="col-md-9" *ngIf="vehicle !=null" >
+              You Are Choosing Vehicle: {{vehicle.brand +' '+ vehicle.vehiclemodel+' '+vehicle.vehicleversion+' '+vehicle.yearofmanufacture}}     
+            </div>
+            <div class="col-md-3">
+              <span class="p-input-icon-right">
+                <input pInputText type="text" (input)="abc.filterGlobal($event.target.value, 'contains')" placeholder="Global Search" >
+                <i class="pi pi-search" style="right: 15px;"></i>               
+            </span>
+            </div>
+          </div>
+
+        </div>
+    </ng-template>
+      <ng-template pTemplate="header">
+          <tr>
+            <th style="width: 3rem">
+          
+          </th>
+            <th pSortableColumn="vehicleid">
+              <div class="flex justify-content-between align-items-center">
+                Vehicleid
+                <p-sortIcon field="vehicleid"></p-sortIcon>
+              </div>
+            </th>
+            <th pSortableColumn="brand">
+              <div class="flex justify-content-between align-items-center">
+                Brand Name
+                <p-sortIcon field="brand"></p-sortIcon>
+              </div>
+            </th>
+            <th pSortableColumn="vehiclemodel">
+              <div class="flex justify-content-between align-items-center">
+                Vehicle Model
+                <p-sortIcon field="vehiclemodel"></p-sortIcon>
+              </div>
+            </th>
+            <th pSortableColumn="vehicleversion">
+              <div class="flex justify-content-between align-items-center">
+                Vehicle Version
+                <p-sortIcon field="vehicleversion"></p-sortIcon>
+              </div>
+            </th>
+            <th pSortableColumn="yearofmanufacture">
+              <div class="flex justify-content-between align-items-center">
+                Year Of Manufacture
+                <p-sortIcon field="yearofmanufacture"></p-sortIcon>
+              </div>
+            </th>
+           
+          </tr>
+      </ng-template>
+      
+      <ng-template pTemplate="body" let-vehicle>
+          <tr class="p-selectable-row">
+            <td>
+              <p-tableRadioButton [value]="vehicle"></p-tableRadioButton>
+            </td>
+            <td>ve{{vehicle.vehicleid}}</td>
+            <td>{{vehicle.brand}}</td>
+            <td>{{vehicle.vehiclemodel}}</td>
+            <td>{{vehicle.vehicleversion}}</td>
+            <td>{{vehicle.yearofmanufacture}}</td>          
+          </tr>
+      </ng-template>
+  </p-table>
+
+</ng-template>
+<ng-template pTemplate="footer">
+    <button pButton pRipple label="Cancel" icon="pi pi-times" class="p-button-text" type="button"
+        (click)="cancelshowlistvehicle()"></button>
+    <button pButton pRipple type="submit" label="Save" icon="pi pi-check" class="p-button-text" (click)="addnewvehicle()"></button>
+</ng-template>
+</p-dialog>
+
+
+<p-dialog  [(visible)]="showchoosenewstatus" [style]="{width: '1200px', height:'1200px'}" 
+[modal]="true" [draggable]="false" [resizable]="false" styleClass="p-fluid">
+<ng-template pTemplate="content">
+  <div class="row" style="margin-bottom: 10px;">
+    <div class="col-lg-9"><h2>Please Review And Choose New Status</h2></div>
+    <div class="col-lg-3">
+      <p-toggleButton [(ngModel)]="checked2" onLabel='Choose This Policy is Apply' offLabel="Set This Policy is UnApply" onIcon="pi pi-check" offIcon="pi pi-times" [style]="{'width': '200px','float': 'right'}"></p-toggleButton>
+    </div>
+    
+  </div>
+
+
+  <p-table [value]="selectedPolicys" responsiveLayout="scroll" [paginator]="true" [rows]="5" [responsive]="true">
+    <ng-template pTemplate="header">
+        <tr>
+            <th pSortableColumn="policyid">Policyid <p-sortIcon field="policyid"></p-sortIcon></th>
+            <th pSortableColumn="policyid">Vehicle version <p-sortIcon field="policyid"></p-sortIcon></th>
+            <th pSortableColumn="vehiclewarranty"> Still Under Warranty <p-sortIcon field="vehiclewarranty"></p-sortIcon></th>
+            <th pSortableColumn="vehicletheft">Vehicle theft <p-sortIcon field="vehicletheft"></p-sortIcon></th>
+            <th pSortableColumn="vehicleaccident">Vehicle accident <p-sortIcon field="vehicleaccident"></p-sortIcon></th>
+            <th pSortableColumn="vehiclebody">Vehicle body <p-sortIcon field="vehiclebody"></p-sortIcon></th>
+            <th pSortableColumn="vehicleengine">Vehicle engine <p-sortIcon field="vehicleengine"></p-sortIcon></th>
+            <th pSortableColumn="flood">Flood <p-sortIcon field="flood"></p-sortIcon></th>
+            <th pSortableColumn="policystatus">Policy status <p-sortIcon field="policystatus"></p-sortIcon></th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-policy>
+        <tr>
+          <td>Plc{{policy.policyid}}</td>
+          <td>{{policy.brandname}}-{{policy.vehiclemodel}}-{{policy.vehicleversion}}</td>
+          <td>{{policy.vehiclewarranty==1?"Yes":"No"}}</td>
+          <td>{{policy.vehicletheft}}%</td>
+          <td>{{policy.vehicleaccident}}%</td>
+          <td>{{policy.vehiclebody}}%</td>
+          <td>{{policy.vehicleengine}}%</td>
+          <td>{{policy.flood}}%</td>
+          <td *ngIf="policy.policystatus==1" style="color: #256029;background-color: #C8E6C9;">Apply</td>
+          <td *ngIf="policy.policystatus==2" style="color: #801136;background-color: #FFCDD2;">UnApply</td>
+        </tr>
+    </ng-template>
+</p-table>
+
+
+</ng-template>
+<ng-template pTemplate="footer">
+    <button pButton pRipple label="Cancel" icon="pi pi-times" class="p-button-text" type="button"
+        (click)="showchoosenewstatus=false"></button>
+    <button pButton pRipple type="submit" label="Save" icon="pi pi-check" class="p-button-text" (click)="choosenewstatus()"></button>
+</ng-template>
+</p-dialog>
+
+
+
+<p-toast></p-toast>
+
+

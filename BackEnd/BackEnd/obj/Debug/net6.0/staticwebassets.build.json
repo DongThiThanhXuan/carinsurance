@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "Fd87mGn19AantNlIJM6bx5KS4Kte0oiCjl/66TrQp2Y=",
+  "Source": "BackEnd",
+  "BasePath": "_content/BackEnd",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BackEnd\\wwwroot",
+      "Source": "BackEnd",
+      "ContentRoot": "C:\\Users\\xuan\\source\\repos\\CarInsurance\\BackEnd\\BackEnd\\wwwroot\\",
+      "BasePath": "_content/BackEnd",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+;
+
+.overlay-popup {
+    background-color: #000000a6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    overflow: hidden;
+    overflow-y: auto;
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.overlay-popup.active {
+    display: flex;
+}
+
+.popup-content-preview {
+
+    position: relative;
+    display: flex;
+    width: 50%;
+    background: #fff;
+    min-height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+    z-index: 1001;
+    padding: 2% 2%;
+    flex-direction: column;
+
+    hr {
+        width: 100%;
+        background-color: black;
+    }
+
+}
+
+.container-button {
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    bottom: 5%;
+}
+
+input[type="button"] {
+    clear: none;
+    cursor: pointer;
+    width: 20%;
+    height: 25%;
+    font-weight: 500;
+    font-size: 1.2vw;
+    background-color: transparent;
+    border: 2px solid #1c6ea5;
+    border-radius: 3px;
+    color: #1c6ea5;
+    text-decoration: none;
+
+    &:hover {
+        color: #1ca141;
+        border-color: #1ca141;
+    }
+}
+
+.popup-content-preview .close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.preview {
+    width: 100%;
+    min-height: 100px;
+
+    &-summary {
+        margin: 10% 0;
+        height: 3vh;
+        background-color: rgb(240, 240, 240);
+        
+        &-detail {
+            height: 29%;
+            margin: 1%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+    }
+
+    &-policy {
+        &-vehicle {
+            height: 80%;
+        }
+
+        &-driver {
+            h4 {
+                position: relative;
+                font-size: 1vw;
+            }
+
+            h4:after {
+                content: "";
+                background: black;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 1px;
+                width: 30%;
+            }
+
+        }
+
+        &-price {
+            width: 100%;
+            height: 30vh;
+            display: flex;
+            row-gap: 10px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border-top: 1px solid rgba(0, 0, 0, 0.267);
+            // border-right: 1px solid rgba(0, 0, 0, 0.26);
+
+            &-detail {
+                width: 30%;
+                padding-top: 2%;
+
+                span {
+                    font-size: 0.8vw;
+                }
+            }
+        }
+    }
+
+    &-header {
+        display: flex;
+        margin: 1% 0;
+        min-height: 20vh;
+
+        &-logo {
+            width: 50%;
+
+            img {
+                margin-right: 30px;
+                height: 72px;
+            }
+
+        }
+
+        &-address {
+            width: 50%;
+            text-align: right;
+        }
+    }
+}

@@ -1,0 +1,283 @@
+<app-navbar-style-two></app-navbar-style-two>
+<div class="container">
+    <p-toast></p-toast>
+    <div class="progress-bar__container">
+        <div class="progress-bar" id="progress-bar">
+
+        </div>
+    </div>
+    <span id="percentage" class="percentage">0% Complete</span>
+
+    <div class="formWrap">
+        <form id="regForm" action="">
+
+            <div class="tab tab-1">
+
+                <div *ngIf="accountLogin; else elseBlock">
+                <h3>Login please</h3>
+                <input type="button" id="continue_btn" value="Login" routerLink="/login-register">
+                </div>
+                
+                <ng-template #elseBlock>
+                    <div class="row">
+                        <div class="col-lg-12">  <h3 *ngIf="accountCustomer!=null">Welcome, {{accountCustomer.accountname}}</h3></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-9"></div>
+                        <div class="col-lg-3"><input type="button" id="continue_btn" value="Next" (click)="nextPrev(1)"></div>
+                    </div>
+                  
+                    
+                </ng-template>
+             
+            </div>
+
+            <div class="tab tab-2">
+                <div class="row">
+                    <div class="col-lg-4"> <span class="previous-question" (click)="nextPrev(-1)">&larr; Previous Question</span></div>
+                </div>
+               
+                <div class="row">
+                    <div class="col-lg-12"> <h3>Select Your Vehicle Brand</h3></div>
+                </div>
+              
+                <div class="row">
+                    <div class="col-lg-4" *ngFor="let brand of brandVehicle "> 
+                        <input  type="button" id="continue_btn" class="brand_btn" (click)="chooseBrand($event)"
+                        value="{{brand}}" style="height: 50px;color:#060720;background-color:rgba(0, 0, 0, 0.05) ;">
+                    </div>
+                </div>
+               
+                
+            </div>
+            <!-- <div class="tab tab-2">
+                <span class="previous-question" (click)="nextPrev(-1)">&larr; Previous Question</span>
+                <br>
+                <span>{{brandPick}}</span>
+                <h3>Enter Your Car's Name</h3>
+                <input #inputSearch type="text" name="car-number" id="car-number"
+                 placeholder="Car's Name" 
+                style="text-transform:uppercase"
+                (keyup)="changeInput($event.target.value)" 
+                (keydown.enter)="keydownCheck($event.target.value)"
+                (keydown.backspace)="changeInput($event.target.value)" >
+                <input type="button" id="continue_btn" value="Clear" (click)="ClearInput()">
+                <h2 *ngIf="statusSearch">No Result</h2>
+                <div class="car-container">
+                    <input *ngFor="let model of autoCompleteVehicle " type="button" id="continue_btn" class="model_btn"
+                        (click)="chooseVersion($event)" value="{{model}}">
+                </div>
+                
+            </div> -->
+               <div class="tab tab-2">
+                <div class="row">
+                    <div class="col-lg-4"> <span class="previous-question" (click)="nextPrev(-1)">&larr; Previous Question</span></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12"> <h3>Your Vehicle Brand: {{brandPick}}</h3></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12"> <h4>Enter Your Car's Name</h4></div>
+                </div>
+                <div class="row col-lg-12" style="margin-top: 15px;">
+                    <span class="p-fluid">
+                        <p-autoComplete [(ngModel)]="key" [style]="{width: '100%'}" [suggestions]="autoCompleteVehicle" (completeMethod)="search($event)" (onSelect)="chooseVersion1()"[ngModelOptions]="{standalone: true}"></p-autoComplete>
+                    </span>               
+                </div>
+                <div class="row" style="margin-top: 15px;">
+                    <div class="col-lg-8"></div>
+                    <div class="col-lg-4"><input type="button" id="continue_btn" value="Next" (click)="nextPrev(1)" *ngIf="vehicleId !=null" style="width: 100%;"></div>
+                </div>
+                
+                
+                
+            </div>
+            <div class="tab tab-2">
+                <div class="row">
+                    <div class="col-lg-4"> <span class="previous-question" (click)="nextPrev(-1)">&larr; Previous Question</span></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">  <h3>{{brandPick}}-{{modelPick}}-{{versionPick}}</h3></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12"> <h4>Select Year's Buy</h4></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4" *ngFor="let year of yearBuy"> 
+                        <input  type="button" id="continue_btn" class="year_btn" (click)="chooseYear($event)"
+                        value="{{year}}" style="height: 50px;color:#060720;background-color:rgba(0, 0, 0, 0.05) ;">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="tab tab-3">
+                <div class="row">
+                    <div class="col-lg-4"> <span class="previous-question" (click)="nextPrev(-1)">&larr; Previous Question</span></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">  <h3>{{brandPick}}-{{modelPick}}-{{versionPick}}-Year's Buy : {{yearPick}}</h3></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12"> <h4>Is your car's warranty valid?</h4></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6"> <input type="button" id="continue_btn" class="year_btn" (click)="chooseItem($event)" value="Yes" style="color:#060720;background-color:rgba(0, 0, 0, 0.05) ;"></div>
+                    <div class="col-lg-6"><input type="button" id="continue_btn" class="year_btn" (click)="chooseItem($event)" value="No"></div>
+                </div>
+               
+                
+             
+            </div>
+            <div class="tab tab-3" style="width:60vw">
+                <div class="row">
+                    <div class="col-lg-4"> <span class="previous-question" (click)="nextPrev(-1)">&larr; Previous Question</span></div>
+                </div>
+                <div class="row" style="height: 20px;">
+                    <div class="col-lg-12">  <h3>Select Your Plan:</h3></div>
+                </div>            
+                <div class=" plans" style="margin-top: 0px;">
+
+                        <ng-container *ngFor="let offer of policyOffer" >
+                            <label class="row  plan basic-plan" for="{{offer.policyid}}" style="width:95% ;margin-top: 15px; box-sizing: border-box; border: 2px solid #e1e2e7;border-radius: 10px;">
+                            <input type="radio" (click)="showPolicyDetails(offer)" name="plan" id="{{offer.policyid}}" value="{{offer.policyid}}" />
+                            <div class="col-lg-2 " style="padding: 15px;">
+
+                                        <img loading="lazy"
+                                        src="assets/img/encrypted.png" alt=""    />
+
+                            </div>
+                            <div class="col-lg-8 " style="align-items: center;">
+                                        <h5>Policy{{offer.policyid}}&nbsp;<i class="fa">&#xf05a;</i></h5>
+                                        <h6>Include:</h6>
+                                        <div class="row">
+                                            <div class="col-lg-2" style="border: 1px #e1e2e7 solid;">Vehicle's Theft</div>
+                                            <div class="col-lg-2" style="border: 1px #e1e2e7 solid;">Vehicle's Accident</div>
+                                            <div class="col-lg-2" style="border: 1px #e1e2e7 solid;">Vehicle's Body</div>
+                                            <div class="col-lg-2" style="border: 1px #e1e2e7 solid;">Flood</div>
+                                            <div class="col-lg-2" style="border: 1px #e1e2e7 solid;">Vehicle's Engine</div>
+                                        </div>
+                                        <div class="row" >
+                                            <div class="row col-lg-2" *ngIf="offer.vehicletheft !=0" style="border: 1px #e1e2e7 solid;">
+                                                <div class="col-lg-4"></div>
+                                                <div class="col-lg-4"><i class="pi pi-check" style="font-size: 1.5rem"></i></div>
+                                                <div class="col-lg-4"></div>
+                                               
+                                            </div>
+                                            <div class="row col-lg-2" *ngIf="offer.vehicletheft ==0" style="border: 1px #e1e2e7 solid;">
+                                                <div class="col-lg-4"></div>
+                                                <div class="col-lg-4">No</div>
+                                                <div class="col-lg-4"></div>
+                                            </div>
+                                            <div class="row col-lg-2" *ngIf="offer.vehicleaccident !=0" style="border: 1px #e1e2e7 solid;">
+                                                <div class="col-lg-4"></div>
+                                                <div class="col-lg-4"><i class="pi pi-check" style="font-size: 1.5rem"></i></div>
+                                                <div class="col-lg-4"></div>
+                                            </div>
+                                            <div class="row col-lg-2" *ngIf="offer.vehicleaccident ==0" style="border: 1px #e1e2e7 solid;">
+                                                <div class="col-lg-4"></div>
+                                                <div class="col-lg-4">No</div>
+                                                <div class="col-lg-4"></div>
+                                            </div>
+                                            <div class="row col-lg-2" *ngIf="offer.vehiclebody !=0" style="border: 1px #e1e2e7 solid;">
+                                                <div class="col-lg-4"></div>
+                                                <div class="col-lg-4"><i class="pi pi-check" style="font-size: 1.5rem"></i></div>
+                                                <div class="col-lg-4"></div>
+                                            </div>
+                                            <div class="row col-lg-2" *ngIf="offer.vehiclebody ==0" style="border: 1px #e1e2e7 solid;">
+                                                <div class="col-lg-4"></div>
+                                                <div class="col-lg-4">No</div>
+                                                <div class="col-lg-4"></div>
+                                            </div>
+                                            <div class="row col-lg-2" *ngIf="offer.flood !=0" style="border: 1px #e1e2e7 solid;">
+                                                <div class="col-lg-4"></div>
+                                                <div class="col-lg-4"><i class="pi pi-check" style="font-size: 1.5rem"></i></div>
+                                                <div class="col-lg-4"></div>
+                                            </div>
+                                            <div class="row col-lg-2" *ngIf="offer.flood ==0" style="border: 1px #e1e2e7 solid;">
+                                                <div class="col-lg-4"></div>
+                                                <div class="col-lg-4">No</div>
+                                                <div class="col-lg-4"></div>
+                                            </div>
+                                            <div class="row col-lg-2" *ngIf="offer.vehicleengine !=0" style="border: 1px #e1e2e7 solid;">
+                                                <div class="col-lg-4"></div>
+                                                <div class="col-lg-4"><i class="pi pi-check" style="font-size: 1.5rem"></i></div>
+                                                <div class="col-lg-4"></div>
+                                            </div>
+                                            <div class="row col-lg-2" *ngIf="offer.vehicleengine ==0" style="border: 1px #e1e2e7 solid;">
+                                                <div class="col-lg-4"></div>
+                                                <div class="col-lg-4">No</div>
+                                                <div class="col-lg-4"></div>
+                                            </div>
+                                        </div>
+                                        
+                                       
+                            </div>
+                              
+                                
+                           
+                            </label>
+                        </ng-container>
+                </div>
+            </div>
+            <div class="tab tab-3">
+                <div class="row">
+                    <div class="col-lg-4"> <span class="previous-question" (click)="nextPrev(-1)">&larr; Previous Question</span></div>
+                </div>
+                <div class="row" style="margin-top: 15px;">
+                    <div class="col-lg-12"> <h4>Car Number</h4></div>
+                </div>
+                <div class="row" style="margin-top: 15px;">
+                    <div class="col-lg-12"> <input type="text" name="car-number" id="car-number" placeholder="Car's Number" #carNumber  style="text-transform:uppercase" maxlength="8"></div>
+                </div>
+                <div class="row" style="margin-top: 15px;">
+                    <div class="col-lg-12"> <h4>Body Number</h4></div>
+                </div>
+                <div class="row" style="margin-top: 15px;">
+                    <div class="col-lg-12"> <input type="text" name="body-number" id="body-number" placeholder="Body's Number" #bodyNumber   style="text-transform:uppercase"  maxlength="17"></div>
+                </div>
+                <div class="row" style="margin-top: 15px;">
+                    <div class="col-lg-12"><h4>Duration</h4></div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-12"><select name="Duration" #duration >     
+                        <option value="" disabled hidden selected>--Select---</option>
+                        <option *ngFor="let month of monthDuration" value={{month}}>{{month}} Year</option>
+                    </select></div>
+                </div>
+                <div class="row" style="margin-top: 15px;">
+                    <div class="col-lg-6"> </div>
+                    <div class="col-lg-6"><input type="button" id="continue_btn" value="Preview" (click)="showPreviewForm(1)"></div>
+                </div>
+                
+                <br>
+                
+            </div>
+            <div class="tab tab-3">
+                <span *ngIf="!payPalstatus" class="previous-question" (click)="nextPrev(-1)">&larr; Previous Question</span>
+                <h3>Please choose a form of payment</h3>
+                <ngx-paypal *ngIf="!payPalstatus" [config]="payPalConfig"></ngx-paypal>
+            </div>
+            <div class="tab tab-3" *ngIf="paymentstt=='COMPLETED'">
+                <div class="row">
+                    <div class=" col-lg-4" style="margin-top: 15px;">
+                   
+                    </div>
+                    <div class=" col-lg-4" style="margin-top: 15px;">
+                        <img loading="lazy"
+                        src="assets/img/thankyou.png" alt=""    />
+                    </div>
+                    <div class=" col-lg-4" style="margin-top: 15px;">
+                      
+                    </div>
+
+                </div>
+               
+            </div>
+        </form>
+    </div>
+</div>
+<script src="../../../../assets/js/buyinsurance/index.js"></script>
+<detail-policy (buttonClick)="onButtonClick($event)"></detail-policy>
+<preview-form (buttonClick)="onButtonClick1($event)"></preview-form>
+<app-footer-style-two></app-footer-style-two>

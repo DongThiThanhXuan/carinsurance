@@ -1,0 +1,277 @@
+<div class="content-header">
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1 class="m-0">Contracts</h1>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </div><!-- /.container-fluid -->
+</div>
+
+<div class="card">
+  <p-table #dt [value]="listcontracts" [paginator]="true" [rows]="rows" [showCurrentPageReport]="true" [(first)]="first" 
+  responsiveLayout="scroll" [rowHover]="true" dataKey="estimateid" styleClass="p-datatable-listcontracts"
+      currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [rowsPerPageOptions]="[10,25,50]"
+      [filterDelay]="0" [globalFilterFields]="['estimateid', 'personid', 'fullname', 'policyid', 'numberyear', 'insurancefee', 'expirationdate']">
+      <ng-template pTemplate="caption">
+        <div class="table-header">
+          <div class="row">
+            <div class="col-md-2">
+              <h4>List of contracts</h4>
+            </div>
+            <div class="col-md-8"></div>
+            <div class="col-md-2">
+              <span class="p-input-icon-right">
+                 <i class="pi pi-search"></i>
+                <input pInputText type="text" (input)="dt.filterGlobal($event.target.value, 'contains')" placeholder="Global Search" />
+            </span>
+            </div>
+          </div>
+        </div>
+    </ng-template>
+      <ng-template pTemplate="header">
+          <tr>
+            <!-- <th style="width: 3rem">
+              <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+          </th> -->
+            <th pSortableColumn="estimateid">
+              <div class="flex justify-content-between align-items-center">
+                Estimate Id 
+                <p-sortIcon field="estimateid"></p-sortIcon>
+              </div>
+            </th>
+
+            <th pSortableColumn="policyid">
+              <div class="flex justify-content-between align-items-center">
+                Policy Id 
+                <p-sortIcon field="policyid"></p-sortIcon>
+              </div>
+            </th>
+
+            <th pSortableColumn="personid">
+              <div class="flex justify-content-between align-items-center">
+                Person Id
+                <p-sortIcon field="personid"></p-sortIcon>
+              </div>
+            </th>
+
+            <th pSortableColumn="fullname">
+              <div class="flex justify-content-between align-items-center">
+                Fullname
+                <p-sortIcon field="fullname"></p-sortIcon>
+              </div>
+            </th>
+
+            <th pSortableColumn="numberyear">
+              <div class="flex justify-content-between align-items-center">
+                Contract duaration
+                <p-sortIcon field="numberyear"></p-sortIcon>
+              </div>
+            </th>
+
+            <th pSortableColumn="insurancefee">
+              <div class="flex justify-content-between align-items-center">
+                Insurance fee
+                <p-sortIcon field="insurancefee"></p-sortIcon>
+              </div>
+            </th>
+
+            <th pSortableColumn="expirationdate">
+              <div class="flex justify-content-between align-items-center">
+                Expiration date
+                <p-sortIcon field="expirationdate"></p-sortIcon>
+              </div>
+            </th>
+
+              <th>Detail</th>
+          </tr>
+      </ng-template>
+
+      <ng-template pTemplate="body" let-con>
+        <tr class="p-selectable-row">
+          <!-- <td>
+            <p-tableCheckbox [value]="account"></p-tableCheckbox>
+          </td> -->
+            <td>{{con.estimateid }}</td>
+            <td>{{con.policyid }}</td>
+            <td>{{con.personid }}</td>
+            <td>{{con.fullname }}</td>
+            <td>{{con.numberyear }} year</td>
+            <td>{{con.insurancefee.toLocaleString('us-US', { style: 'currency', currency: 'USD' }) }}</td>
+            <td>{{con.expirationdate }}</td>             
+            <td>
+                <button pButton pRipple type="button" icon="pi pi-info" pTooltip="Detail" class="p-button-rounded p-button-info p-button-outlined" (click)="openDetail(con)"></button>
+            </td>
+        </tr>
+    </ng-template>      
+  </p-table>
+
+  <form *ngIf="detailForm" [formGroup]="detailForm">
+    <p-dialog [(visible)]="detailDialog" [style]="{width: '900px'}" header="CONTRACT DETAILS"
+        [modal]="true" [draggable]="false" [resizable]="false" styleClass="p-fluid">
+
+        <ng-template pTemplate="content">
+            <div class="row">
+              <hr>
+              <p-divider align="center" type="dashed">
+                <h5>Customer information</h5>
+              </p-divider>
+                    <div class="form-group">            
+                          <div class="row">
+                              <div class="col-lg-6">
+                                <label for="fullname">Fullname</label>
+                                  <input type="text" class="form-control" formControlName="fullname" style="width: 100%; text-transform:uppercase" pInputText disabled="disabled" >
+                              </div>
+                              <div class="col-lg-6">
+                                <label for="personid">Person Id</label>
+                                <input type="text" class="form-control" formControlName="personid" style="width: 100%; text-transform:uppercase" pInputText disabled="disabled" >
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <label for="email">Email</label>
+                                <input type="text" class="form-control" formControlName="email" style="width: 100%" pInputText disabled="disabled" >
+                            </div>
+                            <div class="col-lg-6">
+                              <label for="phone">Phone</label>
+                              <input type="text" class="form-control" formControlName="phone" style="width: 100%" pInputText disabled="disabled" >
+                          </div>                         
+                        </div>
+
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control" formControlName="address" style="width: 100%" pInputText disabled="disabled" >
+                        </div>
+                        </div>
+                      </div>
+            <p-divider align="center" type="dashed">
+              <h5>Vehicle information</h5>
+            </p-divider>
+
+            <div class="form-group">            
+              <div class="row">
+                  <div class="col-lg-4">
+                    <label for="vehiclebrand">Vehicle brand</label>
+                      <input type="text" class="form-control" formControlName="vehiclebrand" style="width: 100%; text-transform:uppercase" pInputText disabled="disabled" >
+                  </div>
+                  <div class="col-lg-4">
+                    <label for="vehiclemodel">Vehicle model</label>
+                    <input type="text" class="form-control" formControlName="vehiclemodel" style="width: 100%; text-transform:uppercase" pInputText disabled="disabled" >
+                </div>
+                <div class="col-lg-4">
+                  <label for="vehicleversion">Vehicle version</label>
+                  <input type="text" class="form-control" formControlName="vehicleversion" style="width: 100%; text-transform:uppercase" pInputText disabled="disabled" >
+              </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-4">
+                  <label for="vehicleyear">Year of manufacture</label>
+                    <input type="text" class="form-control" formControlName="vehicleyear" style="width: 100%" pInputText disabled="disabled" >
+                </div>
+                <div class="col-lg-4">
+                  <label for="vehiclebodynumber">Vehicle body number</label>
+                  <input type="text" class="form-control" formControlName="vehiclebodynumber" style="width: 100%" pInputText disabled="disabled" >
+              </div> 
+              <div class="col-lg-4">
+                <label for="vehicleenginenumber">Vehicle engine number</label>
+                <input type="text" class="form-control" formControlName="vehicleenginenumber" style="width: 100%" pInputText disabled="disabled" >
+            </div>                         
+            </div>
+
+            <div class="row">
+              <div class="col-lg-4">
+                <label for="buyyear">Buy year</label>
+                <input type="text" class="form-control" formControlName="buyyear" style="width: 100%" pInputText disabled="disabled" >
+            </div>
+            <div class="col-lg-4">
+              <label for="marketvalue">Market value</label>
+              <input type="text" class="form-control" formControlName="marketvalue" style="width: 100%" pInputText disabled="disabled" >
+          </div>
+          <div class="col-lg-4">
+            <label for="valueestimate">Value estimate</label>
+            <input type="text" class="form-control" formControlName="valueestimate" style="width: 100%" pInputText disabled="disabled" >
+          </div>
+         </div>
+        </div>
+
+        <p-divider align="center" type="dashed">
+          <h5>Insurance information</h5>
+        </p-divider>
+
+        <div class="form-group">            
+          <div class="row">
+              <div class="col-lg-3">
+                <label for="policyid">Policy Id</label>
+                  <input type="text" class="form-control" formControlName="policyid" style="width: 100%; text-transform:uppercase" pInputText disabled="disabled" >
+              </div>
+              <div class="col-lg-3">
+                <label for="vehicletheft">Vehicle theft</label>
+                <input type="text" class="form-control" formControlName="vehicletheft" style="width: 100%; text-transform:uppercase" pInputText disabled="disabled" >
+            </div>
+            <div class="col-lg-3">
+              <label for="vehicleaccident">Vehicle accident</label>
+              <input type="text" class="form-control" formControlName="vehicleaccident" style="width: 100%; text-transform:uppercase" pInputText disabled="disabled" >
+          </div>
+          <div class="col-lg-3">
+            <label for="vehiclebody">Vehicle body</label>
+            <input type="text" class="form-control" formControlName="vehiclebody" style="width: 100%; text-transform:uppercase" pInputText disabled="disabled" >
+        </div>
+      </div>
+
+          <div class="row">
+            <div class="col-lg-3">
+              <label for="vehicleengine">Vehicle engine</label>
+                <input type="text" class="form-control" formControlName="vehicleengine" style="width: 100%" pInputText disabled="disabled" >
+            </div>
+            <div class="col-lg-3">
+              <label for="flood">Flood</label>
+              <input type="text" class="form-control" formControlName="flood" style="width: 100%" pInputText disabled="disabled" >
+          </div> 
+          <div class="col-lg-3">
+            <label for="insurancepercent">Insurance percent</label>
+            <input type="text" class="form-control" formControlName="insurancepercent" style="width: 100%" pInputText disabled="disabled" >
+        </div>  
+        <div class="col-lg-3">
+          <label for="insurancefee">Insurance fee</label>
+          <input type="text" class="form-control" formControlName="insurancefee" style="width: 100%" pInputText disabled="disabled" >
+      </div>                         
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3">
+            <label for="numberyear">Year of contract</label>
+            <input type="text" class="form-control" formControlName="numberyear" style="width: 100%" pInputText disabled="disabled" >
+        </div>
+          <div class="col-lg-3">
+            <label for="paymentdate">Payment date</label>
+            <input type="text" class="form-control" formControlName="paymentdate" style="width: 100%" pInputText disabled="disabled" >
+        </div>
+        <div class="col-lg-3">
+          <label for="expirationdate">Expiration date</label>
+          <input type="text" class="form-control" formControlName="expirationdate" style="width: 100%" pInputText disabled="disabled" >
+      </div>
+      <div class="col-lg-3">
+        <label for="paypalbillno">Paypal bill no</label>
+        <input type="text" class="form-control" formControlName="paypalbillno" style="width: 100%" pInputText disabled="disabled" >
+      </div>
+     </div>
+    </div>
+          
+              </div> 
+        </ng-template>
+        <ng-template pTemplate="footer">
+            <button pButton pRipple label="Close" icon="pi pi-times" class="p-button-text" type="button"
+                (click)="detailDialog=false"></button>
+        </ng-template>
+    </p-dialog>
+</form>
+
+</div>
+<p-toast></p-toast>
+
+
+
+

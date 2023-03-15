@@ -1,0 +1,162 @@
+<div class="content-header">
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1 class="m-0">Vehicle</h1>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </div><!-- /.container-fluid -->
+</div>
+
+<div class="card">
+  <p-table #dt [value]="listbrands" [paginator]="true" [rows]="rows" [showCurrentPageReport]="true" [(first)]="first" 
+  responsiveLayout="scroll" [rowHover]="true" dataKey="brandid" styleClass="p-datatable-listbrands"
+      currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [rowsPerPageOptions]="[10,25,50]"
+      [filterDelay]="0" [globalFilterFields]="['brandid','brandname']">
+      <ng-template pTemplate="caption">
+        <div class="table-header">
+          <div class="row">
+            <div class="col-md-2">
+              <h4>List of brands</h4>
+            </div>
+            <div class="col-md-8"></div>
+            <div class="col-md-2">
+              <span class="p-input-icon-right">
+                 <i class="pi pi-search"></i>
+                <input pInputText type="text" (input)="dt.filterGlobal($event.target.value, 'contains')" placeholder="Global Search" />
+            </span>
+            </div>
+          </div>
+          <button pButton pRipple label="New brand" icon="pi pi-plus" class="p-button-success mr-2"
+          (click)="openAddBrand()"></button>
+        </div>
+    </ng-template>
+      <ng-template pTemplate="header">
+          <tr>
+            <!-- <th style="width: 3rem">
+              <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+          </th> -->
+            <th pSortableColumn="brandid">
+              <div class="flex justify-content-between align-items-center">
+                Brand Id 
+                <p-sortIcon field="brandid"></p-sortIcon>
+              </div>
+            </th>
+
+            <th pSortableColumn="brandname">
+              <div class="flex justify-content-between align-items-center">
+                Brand name
+                <p-sortIcon field="brandname"></p-sortIcon>
+              </div>
+            </th>
+              <th>Edit</th>
+          </tr>
+      </ng-template>
+      
+      <ng-template pTemplate="body" let-brand>
+          <tr class="p-selectable-row">
+            <!-- <td>
+              <p-tableCheckbox [value]="account"></p-tableCheckbox>
+            </td> -->
+              <td>{{brand.brandid }}</td>
+              <td>{{brand.brandname }}</td>            
+              <td>
+                  <button pButton pRipple type="button" icon="pi pi-pencil" pTooltip="Edit" class="p-button-rounded p-button-info p-button-outlined" (click)="openUpdate(brand)"></button>
+              </td>
+          </tr>
+      </ng-template>
+  </p-table>
+
+<form *ngIf="addBrandForm" [formGroup]="addBrandForm" (ngSubmit)="save1()">
+    <p-dialog [(visible)]="brandDialog" [style]="{width: '300px'}" header="Add Brand"
+        [modal]="true" [draggable]="false" [resizable]="false" styleClass="p-fluid">
+
+        <ng-template pTemplate="content">
+            <div class="row">
+                    <div class="form-group">
+                        <label for="model">Brand name</label>
+                          <div class="row">
+                              <div class="col-lg-12">
+                                <ng-container *ngIf="!errorbrand">
+                                  <input type="text" class="form-control" id="brandname" placeholder="Enter brand" aria-describedby="brand-help" pInputText
+                                  formControlName="brandname" style="width: 100%; text-transform:uppercase" >
+                                </ng-container>
+                              </div>
+                              </div>
+                              <ng-container *ngIf="errorbrand">
+                              <div class="row">
+                                <div class="col-lg-12">                     
+                                    <input type="text" class="form-control" id="brandname" placeholder="Enter brand" aria-describedby="brand-help" class="ng-invalid ng-dirty" pInputText
+                                    formControlName="brandname" style="width: 100%; text-transform:uppercase">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <small id="brand-help" class="p-error" style="width: 100%;">{{errorbrand}}</small>  
+                                </div>
+                              </div>
+                          </ng-container>    
+                        </div>
+              </div> 
+        </ng-template>
+        <ng-template pTemplate="footer">
+            <button pButton pRipple label="Cancel" icon="pi pi-times" class="p-button-text" type="button"
+                (click)="brandDialog=false"></button>
+            <button pButton pRipple type="submit" label="Save" icon="pi pi-check" class="p-button-text"></button>
+        </ng-template>
+    </p-dialog>
+</form>
+
+
+<form *ngIf="editBrandForm" [formGroup]="editBrandForm" (ngSubmit)="save2()">
+  <p-dialog [(visible)]="editbrandDialog" [style]="{width: '300px'}" header="Edit Brand"
+      [modal]="true" [draggable]="false" [resizable]="false" styleClass="p-fluid">
+      <ng-template pTemplate="content">
+                <div class="row">
+                  <div class="form-group">
+                      <label for="model">Brand name</label>
+                        <div class="row">
+                            <div class="col-lg-12">
+                              <ng-container *ngIf="!errorbrand">
+                                <input type="text" class="form-control" id="brandname" placeholder="Enter brand" aria-describedby="brand-help" pInputText
+                                formControlName="brandname" style="width: 100%; text-transform:uppercase">
+                              </ng-container>
+                            </div>
+                            </div>
+                            <ng-container *ngIf="errorbrand">
+                            <div class="row">
+                              <div class="col-lg-12">                     
+                                  <input type="text" class="form-control" id="brandname" placeholder="Enter brand" aria-describedby="brand-help" class="ng-invalid ng-dirty" pInputText
+                                  formControlName="brandname" style="width: 100%; text-transform:uppercase">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-12">
+                                <small id="brand-help" class="p-error" style="width: 100%;">{{errorbrand}}</small>  
+                              </div>
+                            </div>
+                        </ng-container>    
+                    </div>
+              </div> 
+      </ng-template>
+      <ng-template pTemplate="footer">
+          <button pButton pRipple label="Cancel" icon="pi pi-times" class="p-button-text" type="button"
+              (click)="editbrandDialog=false"></button>
+          <button pButton pRipple type="submit" label="Save" icon="pi pi-check" class="p-button-text"></button>
+          <input type="hidden" formControlName="brandid">
+      </ng-template>
+  </p-dialog>
+</form>
+
+<p-dialog [(visible)]="dialogInfo" [style]="{width: '300px'}" header="Information"
+[modal]="true" [draggable]="false" [resizable]="false" styleClass="p-fluid">
+{{dialogInfo}}
+</p-dialog>
+
+  <p-confirmDialog [style]="{width: '50vw'}" [baseZIndex]="10000" rejectButtonStyleClass="p-button-text"></p-confirmDialog>
+</div>
+<p-toast></p-toast>
+
+
+
+

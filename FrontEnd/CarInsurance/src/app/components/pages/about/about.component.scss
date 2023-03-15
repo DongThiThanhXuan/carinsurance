@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap');
+$blue-light: #2ab9f9;
+$blue-dark: #002e5b;
+$white: #ffffff;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-about {
+    width: 100vw;
+    min-height: 100vh;
+
+
+    .section {
+        width: 100vw;
+
+        &-branding {
+            text-align: center;
+            height: 30vh;
+
+            h1 {
+                margin: 2% 0;
+                color: $blue-dark;
+            }
+
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(calc(-250px * 7))
+                }
+            }
+
+
+            /*  Styling  */
+            #logos-home-page .slider {
+
+                height: auto;
+                margin: auto;
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+            }
+
+            #logos-home-page .slider:before,
+            #logos-home-page .slider:after {
+                background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+                content: "";
+                height: 100px;
+                position: absolute;
+                width: 200px;
+                z-index: 2;
+            }
+
+            #logos-home-page .slider:after {
+                right: 0;
+                top: 0;
+                transform: rotateZ(180deg);
+            }
+
+            #logos-home-page .slider:before {
+                left: 0;
+                top: 0;
+            }
+
+            #logos-home-page .slide-track {
+                animation: scroll 40s linear infinite;
+                display: flex;
+                width: calc(250px * 14);
+            }
+
+            #logos-home-page div.slide {
+                padding: 0 12px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+
+        &-testimonial {
+
+            height: 70vh;
+            margin: 5% 0;
+            text-align: center;
+            overflow: hidden;
+
+            h4 {
+                color: $blue-light;
+                font-weight: 500;
+            }
+
+            h1 {
+                margin: 1% 0;
+            }
+
+            .header-p {
+                padding: 0 20%;
+            }
+
+            .text-left {
+                text-align: left;
+            }
+
+            .quotes {
+
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                padding: 5%;
+            }
+
+            .quotes-slide {
+                width: 33%;
+                padding: 3rem;
+                background-color: white;
+                opacity: .4;
+                cursor: pointer;
+                box-shadow: 0px 0px 0px 1px #d5d5d5;
+                line-height: 1.75;
+                font-family: 'Roboto', sans-serif;
+                transition: all .5s ease;
+                outline: none;
+            }
+
+            .quotes-slide--active {
+                transform: scale(1.2);
+                z-index: 10;
+                opacity: 1;
+                border: none;
+                box-shadow: 1px 0px 10px 5px #eaeaea;
+                color: #222222;
+            }
+
+            blockquote {
+                margin: 0;
+            }
+
+            cite {
+                font-style: normal;
+                font-family: 'Roboto', sans-serif;
+                font-size: .9rem;
+            }
+
+            cite::before {
+                content: '\2014 \0020';
+            }
+
+            .icon {
+                width: 25px;
+                height: 25px;
+                fill: #1a73e8;
+            }
+        }
+
+        &-why {
+            min-height: 70vh;
+            display: flex;
+
+            &__image {
+                position: relative;
+                width: 40%;
+                overflow: hidden;
+
+                .banner1,
+                .banner2,
+                .banner3 {
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+
+                }
+
+                img {
+                    width: 110%;
+                    height: inherit;
+                    animation: zoom-out 12s linear infinite;
+                }
+
+                .text-box {
+                    position: absolute;
+                    width: 100%;
+                    top: 40%;
+                    left: 5%;
+                    color: white;
+                    animation: textUp 12s linear infinite;
+
+                    h1 {
+                        font-size: 6rem;
+                    }
+                }
+
+                @keyframes textUp {
+                    0% {
+                        transform: translateY(0px);
+                    }
+
+                    50% {
+                        transform: translateY(50px);
+                    }
+
+                    100% {
+                        transform: translateY(100px);
+                    }
+                }
+
+                .text-box span {
+                    width: 100px;
+                    height: 1px;
+                    background-color: orange;
+                    position: absolute;
+                    left: 0;
+                }
+
+                .slide1 {
+                    animation: fade1 12s linear infinite;
+                }
+
+                .slide2 {
+                    animation: fade2 12s linear infinite;
+                }
+
+                .slide3 {
+                    animation: fade3 12s linear infinite;
+                }
+
+                @keyframes fade1 {
+                    0% {
+                        visibility: visible;
+                    }
+
+                    25% {
+                        visibility: hidden;
+                    }
+
+                    50% {
+                        visibility: hidden;
+                    }
+
+                    75% {
+                        visibility: hidden;
+                    }
+
+                    100% {
+                        visibility: visible;
+                    }
+                }
+
+                @keyframes fade2 {
+                    0% {
+                        visibility: hidden;
+                    }
+
+                    25% {
+                        visibility: hidden;
+                    }
+
+                    50% {
+                        visibility: visible;
+                    }
+
+                    75% {
+                        visibility: hidden;
+                    }
+
+                    100% {
+                        visibility: hidden;
+                    }
+                }
+
+                @keyframes fade3 {
+                    0% {
+                        visibility: hidden;
+                    }
+
+                    25% {
+                        visibility: hidden;
+                    }
+
+                    50% {
+                        visibility: hidden;
+                    }
+
+                    75% {
+                        visibility: visible;
+                    }
+
+                    100% {
+                        visibility: hidden;
+                    }
+                }
+
+                @keyframes zoom-out {
+                    100% {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &__content {
+                overflow: hidden;
+                width: 60%;
+                background: url(../../../../assets/img/aboutus/why-choose-bg.jpg) center right;
+                padding: 5%;
+
+                padding-right: 20%;
+                color: white;
+
+                h4 {
+                    color: $blue-light;
+                    font-weight: 500;
+                }
+
+                h1 {
+                    margin: 5% 0;
+                }
+
+            }
+
+            &__container {
+                margin-top: 10%;
+                min-height: 40vh;
+                display: flex;
+
+            }
+
+            &__column {
+                width: 50%;
+                padding-right: 5%;
+
+                h3 {
+                    margin-top: 10%;
+                }
+
+                p {
+                    margin: 2% 0;
+                }
+            }
+        }
+
+        &-header {
+            height: 51vh;
+
+
+
+            &__bottom {
+                height: 100%;
+                background: url(../../../../assets/img/aboutus/main-banner5.jpg) center bottom no-repeat;
+                color: $blue-dark;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .header {
+                    text-align: center;
+
+                    h2 {
+                        font-weight: 700;
+                        font-size: 2.2vw;
+                    }
+
+                    h3 {
+                        font-weight: 500;
+                    }
+
+                    span {
+                        font-size: 1.5vw;
+                        color: $blue-light
+                    }
+                }
+            }
+
+        }
+
+        &-body {
+            min-height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f9fa;
+
+            &__content {
+                width: 75%;
+                min-height: 80%;
+                display: flex;
+                gap: 2%;
+                margin-top: 2%;
+
+                &:nth-child(2) {
+                    justify-content: center;
+
+                }
+
+                &-box {
+                    padding: 2%;
+                    width: 30%;
+                    height: inherit;
+                    background-color: white;
+
+                    h4 {
+                        margin-bottom: 2%;
+                        font-size: 1vw;
+                    }
+
+                    &:hover {
+                        background-color: $blue-dark;
+                        color: white;
+                        transition: 0.2;
+                    }
+                }
+
+                &-image {
+                    width: 50%;
+                    position: relative;
+                    height: inherit;
+
+                    img {
+                        position: absolute;
+                        width: 360px;
+                        height: 300px;
+
+                        &:nth-child(1) {
+                            right: 10%;
+                            bottom: 6%;
+                            z-index: 2;
+                        }
+
+                    }
+
+                }
+
+                &-infor {
+                    padding-top: 2%;
+                    width: 50%;
+                    height: 46vh;
+                    border-radius: 3px;
+                    border: none;
+                    box-shadow: 0px 5px 28.5px 1.5px r;
+
+                    h4 {
+                        color: $blue-light;
+                        font-weight: 500;
+                        font-size: 1vw;
+                    }
+
+                    h1 {
+                        margin: 2% 0;
+                        font-size: 2.2vw;
+                        color: $blue-dark;
+                    }
+                }
+
+
+            }
+        }
+    }
+}

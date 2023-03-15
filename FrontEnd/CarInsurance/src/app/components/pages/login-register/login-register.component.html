@@ -1,0 +1,176 @@
+<div class="user-area">
+    <div class="container-fluid m-0">
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-xl-6  p-0" style="height: 863px">
+                <div class="user-img" style="height: 863px">
+                    <img src="assets/img/ctr-img.jpg" alt="Images" style="height: 110%">
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-xl-6">
+                <div class="user-section text-center">
+                    <div class="user-content" style="    margin-bottom:0px">
+                        <a routerLink="/home" class="logo"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                    </div>
+                    <div class="user-content">
+                        <h2>Welcome To Truz</h2>
+                    </div>
+                    <div class="tab user-tab">
+                        <ul class="tabs">
+                            <li><a href="#"> <i class="flaticon-contact"></i> Login</a></li>
+                            <li><a href="#"> <i class="flaticon-verify"></i> Register</a></li>
+                        </ul>
+                        <div class="tab_content current active">
+                            <div class="tabs_item current">
+                                <div class="user-all-form">
+                                    <div class="contact-form">
+                                        <form id="contactForm" >
+                                            <div class="row">
+                                                <div class="col-lg-12 ">
+                                                    <div class="form-group">
+                                                        <i class='bx bx-user'></i>
+                                                        <input type="text" name="name" id="name" class="form-control" required data-error="Please enter your Email" placeholder="Email" [(ngModel)]="email" >
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <i class='bx bx-lock-alt'></i>
+                                                        <input class="form-control" type="password" name="password" placeholder="Password" [(ngModel)]="password">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 text-center">
+                                                    <button type="submit" class="default-btn user-all-btn" (click)="login()">Login</button>
+                                                </div>
+                                               
+                                                
+                                            </div>
+                                        </form>
+                                        <!-- <div class="social-option">
+                                            <h3>Or Login With</h3>
+                                            <ul>
+                                                <li><a href="#">Facebook</a></li>
+                                                <li><a href="#">Twitter</a></li>
+                                                <li><a href="#">Linkedin</a></li>
+                                            </ul>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs_item">
+                                <div class="user-all-form">
+                                    <div class="contact-form">
+                                        <form id="contactForm" [formGroup]="addAccountForm" (ngSubmit)="register()">
+                                            <div class="row">
+                                                <div class="col-lg-12 ">
+                                                    <div class="form-group">
+                                                        <div class="col-lg-12">
+                                                            <i class='bx bx-user'></i>
+                                                            <input type="text" name="personid" id="personid" class="form-control" required data-error="Please enter your personid" placeholder="personid" formControlName="personid">
+                                                        </div>
+                                                        <div class="col-lg-12"
+                                                                style="height: 0px; text-align: left; margin: 0,0,0,0;  vertical-align: text-top; font-size: 14px;color:red">
+                                                                {{errorpersonid}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="form-group">
+                                                        <div class="col-lg-12">
+                                                            <i class='flaticon-email-2'></i>
+                                                            <input type="email" name="email" id="email" class="form-control" required data-error="Please enter email" placeholder="Email" formControlName="accountemail">
+                                                            </div>
+                                                        <div class="col-lg-12"
+                                                                style="height: 0px; text-align: left; margin: 0,0,0,0;  vertical-align: text-top; font-size: 14px;color:red">
+                                                                {{errorEmail}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="form-group">
+                                                        <div class="col-lg-12">
+                                                            <i class='flaticon-contact'></i>
+                                                            <input type="text" name="" id="name" class="form-control" required data-error="Please enter fullname" placeholder="Fullname" formControlName="accountname">
+                                                            </div>
+                                                        <div class="col-lg-12"
+                                                                style="height: 0px; text-align: left; margin: 0,0,0,0;  vertical-align: text-top; font-size: 14px;color:red">
+                                                                {{errorName}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <div class="col-lg-12">
+                                                            <i class='bx bx-lock-alt'></i>
+                                                            <input class="form-control" type="password" name="password" placeholder="Password" formControlName="passwords">
+                                                        </div>
+                                                        <div class="col-lg-12"
+                                                            style="height: 0px; text-align: left; margin: 0,0,0,0;  vertical-align: text-top; font-size: 14px;color:red">
+                                                            {{errorPass}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <div class="col-lg-12">
+                                                            <i class='bx bx-lock-alt'></i>
+                                                            <input class="form-control" type="password" name="confirmpassword" placeholder="Confirm Password" [(ngModel)]="repass" [ngModelOptions]="{standalone: true}">
+                                                        </div>
+                                                        
+                                                        <div class="col-lg-12"
+                                                            style="height: 0px; text-align: left; margin: 0,0,0,0;  vertical-align: text-top; font-size: 14px;color:red">
+                                                            {{errorRePass}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-lg-12 col-md-12 text-center">
+                                                    <button type="submit" class="default-btn  user-all-btn">Register</button>
+                                                </div>
+                                                <div class="col-12">
+                                                    <p class="account-desc">Already have an account? <a routerLink="/login-register">Login</a></p>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <!-- <div class="social-option">
+                                            <h3>Or Register With</h3>
+                                            <ul>
+                                                <li><a href="#">Facebook</a></li>
+                                                <li><a href="#">Twitter</a></li>
+                                                <li><a href="#">Linkdin</a></li>
+                                            </ul>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p-dialog  [(visible)]="showloading" [modal]="true" [closable]="false" >
+    <img src="../../../../assets/Spinner-1s-200px.gif"
+    style="text-align: center;" />
+</p-dialog>
+<p-dialog header="" [(visible)]="displayModalLogin" [modal]="true"
+                                            [style]="{width: '30vw'}" [draggable]="false" [resizable]="false"
+                                            [closable]="false">
+                                            <h3 style="font-size: 30;">Login Dialog</h3>
+                                            <p class="m-0" style="font-size: 20px;"><br>{{displayModalLoginTitle}}</p>
+                                            <ng-template pTemplate="footer">
+                                                <p-button icon="pi pi-check" (click)="closedisplayModalLogin()" label="Ok"
+                                                    styleClass="p-button-text"></p-button>
+                                            </ng-template>
+</p-dialog>
+<p-dialog header="" [(visible)]="displayModalRegister" [modal]="true"
+                                                    [style]="{width: '50vw'}" [draggable]="false" [resizable]="false"
+                                                    [closable]="false">
+                                                    <h3 style="font-size: 30;">Register Dialog</h3>
+                                                    <p class="m-0" style="font-size: 20px;"><br>{{displayModalRegisterTitle}}</p>
+                                                    <ng-template pTemplate="footer">
+                                                        <p-button icon="pi pi-check" (click)="closedisplayModalRegister()"
+                                                            label="Ok" styleClass="p-button-text"></p-button>
+                                                    </ng-template>
+</p-dialog>

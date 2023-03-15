@@ -1,0 +1,26 @@
+  <!-- Brand Logo -->
+  <a a routerLink="/home" class="brand-link">
+    <img src="assets/img/logo/logo.png" style="opacity: 0.9; margin-left: 35px;">
+    <br>
+    <!-- <span class="brand-text font-weight-light" style="color: #495057;">VehicleInsurance</span> -->
+  </a>
+
+  <!-- Sidebar -->  <div class="sidebar">
+    <!-- Sidebar user panel (optional) -->
+    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <div class="listing-side-host">
+        <h6 *ngIf="account">Welcome, {{account.accountname}}</h6>
+        <!-- <br> -->
+        <!-- <a routerLink="#" class="d-block" style="color: #495057;margin-left: 30px;"></a> -->
+      </div>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="mt-2">
+      <p-slideMenu [model]="items" 
+      [style]="{'background-color': '#F5F5F5', 'font-color': '#689F38','border':'none'}" 
+viewportHeight="700" ></p-slideMenu>
+    </div>
+    <!-- /.sidebar-menu -->
+  </div>
+  <!-- /.sidebar -->
